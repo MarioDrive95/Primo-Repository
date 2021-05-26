@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>   <!-- versione sdk attualmente in uso -->
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />  <!-- pacchetti installati -->
+  </ItemGroup>
+
+
+                                               
+</Project>
