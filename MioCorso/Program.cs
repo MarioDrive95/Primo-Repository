@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MyCourse;
 
 namespace MioCorso
 {
@@ -15,7 +16,7 @@ namespace MioCorso
         {
             CreateHostBuilder(args).Build().Run();   // primo metodo ad essere avviato che crea un webhost
              
-
+            
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
