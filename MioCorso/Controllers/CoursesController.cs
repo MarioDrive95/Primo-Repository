@@ -9,13 +9,17 @@ namespace MioCorso.Controllers
        
      public IActionResult Index()
      {
-         return Content("Sono Index");       
+         return View();       
      }   
      
      public IActionResult Details(string id)
      {
-         return Content($"Sono{id}");               // ritorna l id di uno specifico corso cercato
+         return View();               // ritorna l id di uno specifico corso cercato
      }
-        
+
+        public IActionResult Search(string title)
+        {
+           return Content($"Hai cercato {title}");
+        }
     }
 }

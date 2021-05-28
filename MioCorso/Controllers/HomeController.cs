@@ -7,7 +7,7 @@ namespace MioCorso.Controllers
     {
        public IActionResult Index()
        {
-           return Content("Sono Index Default della Home");
+           return View();
        } 
 
        public IActionResult Details(string id)

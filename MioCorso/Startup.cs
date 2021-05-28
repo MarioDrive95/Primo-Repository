@@ -20,6 +20,8 @@ namespace MyCourse
 // Aggiungo i services di asp mvc che il MIDDLEWARE di routing userà per trovare e costruire  il CONTROLLER
 // e per utlizizzare l'ACTION richiesta
 
+// Compatibility Version serve ad apportare migliorie in caso di versioni piu moderne
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
 // Inserisco questa istruzioine per disabilitare l EndPointRouting per poter utilizzare (UseMvc)
@@ -52,10 +54,5 @@ namespace MyCourse
         }
     }
 }
-
-
-
-
-
 
 
