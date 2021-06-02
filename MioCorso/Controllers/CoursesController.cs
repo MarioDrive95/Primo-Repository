@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-
-
+using MioCorso.Models.Services;
+using MioCorso.Models.ViewModels;
+using MyCourse.Models.ViewModels;
+using System.Collections.Generic;
 
 namespace MioCorso.Controllers
 {
@@ -9,12 +11,17 @@ namespace MioCorso.Controllers
        
      public IActionResult Index()
      {
-         return View();       
+         CoursesService cservices = new CoursesService();
+         List<CoursesViewModel> elencocourses = cservices.GetCourses();
+         return View(elencocourses);       
      }   
      
-     public IActionResult Details(string id)
+     public IActionResult Details(int id)
      {
-         return View();               // ritorna l id di uno specifico corso cercato
+                 
+           var courseService = new CoursesService();
+            CoursesDetailsViewModel detailcourse = courseService.GetCourse(id);           
+            return View(detailcourse);           // ritorna l id di uno specifico corso cercato
      }
 
         public IActionResult Search(string title)

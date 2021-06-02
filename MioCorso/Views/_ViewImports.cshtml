@@ -1,1 +1,14 @@
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!-- VIEWIMPORTS.CSHTML = FILE DOVE INSERIRE ELEMENTI CHE SI (RIPETONO) IN PIU FILE E CHE VENGONO COMPILATI PER PRIMI-->
+<!-- E CHE QUINDI VERRANNO CONSIDERATI IN OGNI ""VIEW DI CONTENUTO""-->
+
+
+                                                     <!--TagHelper Direttiva per creare link ad altre pagine -->
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers  
+
+
+
+
+                                      <!--Direttive per accedere ai model e quindi ai dati di un oggetto -->
+
+@using System.Collections.Generic
+@using MioCorso.Models.ViewModels
